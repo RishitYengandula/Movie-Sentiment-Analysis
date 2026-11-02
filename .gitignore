@@ -1,0 +1,40 @@
+# Python virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Testing & quality assurance caches
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Raw dataset files (excluded to keep repository lightweight)
+data/*
+!data/.gitkeep
+
+# Serialized model artifacts (sentiment_pipeline.joblib is ~2.15 MB and explicitly tracked for immediate demo use)
+# Exclude generic extra artifacts, but preserve the trained pipeline artifact
+models/*.pkl
+models/*.tmp
+
+# Streamlit runtime & configuration
+.streamlit/secrets.toml
+.streamlit/*.log
+
+# Logs & OS metadata
+*.log
+.DS_Store
+Thumbs.db
+
+# Temporary / scratch files
+*.tmp
+*.temp
+.ipynb_checkpoints/
+.vscode/
+.idea/
